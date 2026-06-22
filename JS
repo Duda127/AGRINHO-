@@ -1,0 +1,20 @@
+function abrirInfo(tipo) {
+  let texto = "";
+
+  if (tipo === "prod") {
+    texto = "🌾 A produção inteligente usa tecnologia para aumentar a produtividade sem destruir o solo.";
+  } 
+  else if (tipo === "pres") {
+    texto = "🌳 A preservação ambiental garante equilíbrio entre agricultura e natureza.";
+  } 
+  else if (tipo === "agua") {
+    texto = "💧 O uso consciente da água é essencial para um futuro sustentável.";
+  }
+
+  document.getElementById("textoPopup").innerText = texto;
+  document.getElementById("popup").style.display = "flex";
+}
+
+function fecharPopup() {
+  document.getElementById("popup").style.display = "none";
+}
